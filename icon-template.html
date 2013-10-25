@@ -1,0 +1,19 @@
+<div class="icon-container"
+	ng-init="currentActive = 'normal'">
+	<img class="icon-normal normal"
+		ng-class="{'current-active': currentActive === 'normal'}"
+		ng-show="currentActive === 'normal'"
+		src="{{ normalIconUrl }}">
+	<img class="icon-hover hover"
+		ng-class="{'current-active': currentActive === 'hover'}"
+		ng-show="currentActive === 'hover'"
+		src="{{ hoverIconUrl }}">
+	<img class="icon-active active"
+		ng-class="{'current-active': currentActive == 'active'}"
+		ng-show="currentActive === 'active'"
+		src="{{ activeIconUrl }}">
+	<img class="icon-toggled toggled"
+		ng-class="{'current-active': currentActive === 'toggled'}"
+		ng-show="currentActive === 'toggled'"
+		src="{{ toggledIconUrl }}">
+</div>
