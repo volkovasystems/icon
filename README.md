@@ -1,0 +1,4 @@
+icon
+====
+
+Smart icon container
